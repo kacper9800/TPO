@@ -1,45 +1,54 @@
-public class Person {
+#include <string>
 
-  private int age;
-  private String firstName;
-  private String middleName;
-  private String city;
+using namespace std;
+class Person
+{
+private:
+    int age;
+    string firstName;
+    string middleName;
+    string city;
 
-  public int getAge() {
-      return age;
-  }
+public:
+    Person(string firstName, string middleName, int age)
+    {
+        this->firstName = firstName;
+        this->middleName = middleName;
+        this->age = age;
+    }
 
-  public void setAge(int age) {
-      this.age = age;
-  }
+    void setFirstName(string firstName)
+    {
+        this->firstName = firstName;
+    }
 
-  public String getFirstName() {
-      return firstName;
-  }
+    string getFirstName()
+    {
+        return this->firstName;
+    }
 
-  public void setFirstName(String firstName) {
-      this.firstName = firstName;
-  }
+    void setMiddleName(string middleName)
+    {
+        this->middleName = middleName;
+    }
 
-  public String getMiddleName() {
-      return middleName;
-  }
+    string getMiddleName()
+    {
+        return this->middleName;
+    }
 
-  public void setMiddleName(String middleName) {
-      this.middleName = middleName;
-  }
+    void setCity(string city)
+    {
+        this->city = city;
+    }
 
-  public String getCity() {
-      return city;
-  }
+    string getCity()
+    {
+        return this->city;
+    }
 
-  public void setCity(String city) {
-      this.city = city;
-  }
-
-  public String display() {
-    return "Wiek:" + age + ", Imie: " + firstName + ", Drugie imie: " + middleName;
-
-  }
-
-}
+    string display()
+    {
+        return "Wiek:" + to_string(age) + ", Imię: " + firstName + ", Drugie imie: " + middleName;
+    }
+};
