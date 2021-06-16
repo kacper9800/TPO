@@ -63,4 +63,8 @@ public:
     {
         return this->senteceDuration;
     }
+
+    void display(){
+        cout<< "imie: "<<name<<" nazwisko: "<<surname<<" pesel: "<<pesel;
+    }
 };

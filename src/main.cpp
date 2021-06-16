@@ -5,13 +5,11 @@ using namespace std;
 
 int main()
 {
+    PersonDataProvider personDataProvider;
+    PrisonersDatabase prisonersDatabase;
 
-  Finder f;
+    Finder suspects(personDataProvider, prisonersDatabase);
+    suspects.displayAllSuspectsWithName("Janusz");
 
-  // Finder suspects = new Finder(new PersonDataProvider(), new PrisonersDatabase());
-  // suspects.displayAllSuspectsWithName("Janusz");
-
-  cout << "Hellow" << endl;
-
-  return 0;
+    return 0;
 }

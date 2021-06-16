@@ -7,6 +7,7 @@ vector<Person> cracovCitizens;
 class PersonDataProvider
 {
 private:
+    vector<Person> cracovCitizens;
     void addPerson(Person data)
     {
         Person p = *new Person(data);
@@ -15,7 +16,7 @@ private:
     }
 
 public:
-    PersonDataProvider(Person data)
+    PersonDataProvider()
     {
 
         Person p1("Jan", "Kowalski", 30);

@@ -9,6 +9,7 @@ map<string, Prisoner> prisoners;
 class PrisonersDatabase
 {
 private:
+    map<string, Prisoner> prisoners;
     void addPrisoner(string category, Prisoner prisoner)
     {
         prisoners.insert(pair<string, Prisoner>(category, prisoner));
@@ -47,6 +48,10 @@ public:
     {
 
         return prisoners;
+    }
+
+    string getName(Prisoner prisoner){
+        return prisoner.getName();
     }
 
     string render(Prisoner prisoner)

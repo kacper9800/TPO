@@ -47,6 +47,10 @@ public:
         return this->city;
     }
 
+    int getAge(){
+        return this->age;
+    }
+
     string display()
     {
         return "Wiek:" + to_string(age) + ", Imię: " + firstName + ", Drugie imie: " + middleName;
