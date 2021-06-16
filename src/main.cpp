@@ -1,4 +1,3 @@
-#include <iostream>
 #include "Finder.cpp"
 
 using namespace std;
