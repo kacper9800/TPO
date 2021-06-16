@@ -1,4 +1,8 @@
 #include <string>
+#include <list>
+#include "PrisonersDatabase.cpp"
+#include "PersonDataProvider.cpp"
+
 
 using namespace std;
 
